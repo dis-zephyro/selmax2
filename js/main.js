@@ -1,5 +1,5 @@
-var h_hght = 108; // высота шапки
-var h_mrg = 0;    // отступ когда шапка уже не видна
+var h_hght = 108; // РІС‹СЃРѕС‚Р° С€Р°РїРєРё
+var h_mrg = 0;    // РѕС‚СЃС‚СѓРї РєРѕРіРґР° С€Р°РїРєР° СѓР¶Рµ РЅРµ РІРёРґРЅР°
 $(function(){
     $(window).scroll(function(){
         var top = $(this).scrollTop();
@@ -34,8 +34,8 @@ $(document).ready(function() {
 
     $('.btn-submit').click(function() {
 
-        $('body').find('form:not(this)').children('label').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
-        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
+        $('body').find('form:not(this)').children('label').removeClass('red'); //СѓРґР°Р»РµРЅРёРµ РІСЃРµС… СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ(РІР°Р»РёРґР°С‚РѕСЂР°)
+        var answer = checkForm($(this).closest('form').get(0)); //РѕС‚РІРµС‚ РѕС‚ РІР°Р»РёРґР°С‚РѕСЂР°
         if(answer != false)
         {
             var $form = $(this).closest('form'),
@@ -52,9 +52,9 @@ $(document).ready(function() {
             }).done(function(msg) {
                 console.log(name, phone, city, org, org);
                 $('form').find('input[type=text], textarea').val('');
-                console.log('удачно');
+                console.log('СѓРґР°С‡РЅРѕ');
                 $.fancybox(
-                    '<div class="done">'+ '<span class="done-title">Спасибо, Ваша заявка принята!</span><br/>В скором времени с вами свяжутся наши менеджеры' +'</div>',
+                    '<div class="done">'+ '<span class="done-title">РЎРїР°СЃРёР±Рѕ, Р’Р°С€Р° Р·Р°СЏРІРєР° РїСЂРёРЅСЏС‚Р°!</span><br/>Р’ СЃРєРѕСЂРѕРј РІСЂРµРјРµРЅРё СЃ РІР°РјРё СЃРІСЏР¶СѓС‚СЃСЏ РЅР°С€Рё РјРµРЅРµРґР¶РµСЂС‹' +'</div>',
                     {
                         'autoDimensions'  : false,
                         'padding': 0,
@@ -71,13 +71,13 @@ $(document).ready(function() {
 
 
 
-// Подключние Яндекс-Карты
+// РџРѕРґРєР»СЋС‡РЅРёРµ РЇРЅРґРµРєСЃ-РљР°СЂС‚С‹
 
 ymaps.ready(init);
 
 function init () {
     var myMap = new ymaps.Map('map', {
-        center: [44.1904,42.0512], // Казань
+        center: [44.1904,42.0512], // РљР°Р·Р°РЅСЊ
         zoom: 16,
         controls: []
     });
@@ -85,15 +85,15 @@ function init () {
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
         hintContent: ''
     }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
+        // РћРїС†РёРё.
+        // РќРµРѕР±С…РѕРґРёРјРѕ СѓРєР°Р·Р°С‚СЊ РґР°РЅРЅС‹Р№ С‚РёРї РјР°РєРµС‚Р°.
         iconLayout: 'default#image',
-        // Своё изображение иконки метки.
+        // РЎРІРѕС‘ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РёРєРѕРЅРєРё РјРµС‚РєРё.
         iconImageHref: 'img/placemark.png',
-        // Размеры метки.
+        // Р Р°Р·РјРµСЂС‹ РјРµС‚РєРё.
         iconImageSize: [356, 82],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
+        // РЎРјРµС‰РµРЅРёРµ Р»РµРІРѕРіРѕ РІРµСЂС…РЅРµРіРѕ СѓРіР»Р° РёРєРѕРЅРєРё РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ
+        // РµС‘ "РЅРѕР¶РєРё" (С‚РѕС‡РєРё РїСЂРёРІСЏР·РєРё).
         iconImageOffset: [20, -41]
     });
 
