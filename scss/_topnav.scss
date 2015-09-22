@@ -5,7 +5,7 @@
     z-index: 500;
     height: 50px;
     background: #fff;
-    position: absolute;
+    position: fixed;
 
 
     @include box-shadow(0px 1px 1px 0px rgba(192, 192, 192, 0.75));
@@ -21,17 +21,17 @@
         li {
             height: 50px;
             position: relative;
-            padding: 15px 10px;
+            padding: 0 10px;
             text-align: center;
             display: table-cell;
-            vertical-align: top;
+            vertical-align: middle;
 
             &:before {
                 left: 0;
                 top: 50%;
                 height: 12px;
                 content: " ";
-                margin-top: -6px;
+                margin-top: -4px;
                 position: absolute;
                 border-left: 1px solid #252525;
             }

@@ -1,0 +1,38 @@
+.b15 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../img/bg_pattern.jpg");
+
+    ul {
+        width: 100%;
+        margin-bottom: 40px;
+
+        li {
+            width: 20%;
+            font-size: 15px;
+            text-align: center;
+            display: table-cell;
+            padding: 105px 15px 0 15px;
+
+            &.item1 {
+                background: url("../img/b15_item1.png") top center no-repeat;
+            }
+
+            &.item2 {
+                background: url("../img/b15_item2.png") top center no-repeat;
+            }
+
+            &.item3 {
+                background: url("../img/b15_item3.png") top center no-repeat;
+            }
+
+            &.item4 {
+                background: url("../img/b15_item4.png") top center no-repeat;
+            }
+
+            &.item5 {
+                background: url("../img/b15_item5.png") top center no-repeat;
+            }
+        }
+    }
+}

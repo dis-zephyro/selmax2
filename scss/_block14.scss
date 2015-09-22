@@ -1,0 +1,30 @@
+.b14 {
+    padding: 60px 0;
+    background: #fff;
+
+    .text-block {
+        float: left;
+        width: 435px;
+        padding: 30px;
+        font-size: 18px;
+        position: relative;
+        background: #efefef;
+        @include border-radius(30px);
+
+        &:before {
+            top: 50%;
+            width: 26px;
+            right: -26px;
+            height: 31px;
+            content: " ";
+            margin-top: -16px;
+            position: absolute;
+            background: url("../img/arrow-right.png") 0 0 no-repeat;
+        }
+    }
+
+    .image-block {
+        float: right;
+        width: 470px;
+    }
+}

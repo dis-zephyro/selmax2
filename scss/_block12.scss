@@ -1,0 +1,22 @@
+.b12 {
+    height: 550px;
+    padding: 60px 0;
+    background: url("../img/b12_bg.jpg") top center no-repeat;
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    .certification {
+        width: 912px;
+        margin: 0 auto 20px auto;
+
+        li {
+            float: left;
+            width: 191px;
+            height: 274px;
+            margin-left: 18px;
+            margin-right: 19px;
+        }
+    }
+}

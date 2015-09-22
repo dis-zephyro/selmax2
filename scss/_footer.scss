@@ -1,0 +1,35 @@
+.footer {
+    color: #2e2e2e;
+    font-size: 20px;
+    padding: 25px 0;
+    background: #fff;
+    font-weight: 600;
+
+    .col {
+        float: left;
+        width: 33.33%;
+    }
+
+    .one {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .tel {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contact-email {
+        font-size: 18px;
+        color: #4897df;
+        text-decoration: none;
+    }
+
+    .dev {
+        a {
+            color: #c43c26;
+            text-decoration: none;
+        }
+    }
+}
