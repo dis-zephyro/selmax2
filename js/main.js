@@ -99,4 +99,5 @@ function init () {
 
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects.add(myPlacemark);
+    myMap.behaviors.disable('multiTouch');
 }

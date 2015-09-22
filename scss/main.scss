@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 
 
 @import "mixin";
@@ -42,6 +42,7 @@ textarea {
     color: #252525;
 
 }
+
 
 body {
     font-size: 20px;
@@ -177,20 +178,20 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 42px;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h2 {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 38px;
+    line-height: 40px;
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h5 {
